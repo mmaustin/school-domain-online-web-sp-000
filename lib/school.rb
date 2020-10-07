@@ -17,7 +17,7 @@ class School
       if grade == year
         student
       end
-    end 
+    end
   end
 
 end
