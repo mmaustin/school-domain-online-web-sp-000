@@ -12,12 +12,12 @@ class School
     roster[grade] << student
   end
 
-  def grade(grade)
-    students = []
-    if @roster[grade] == grade
-      students << student
-    end
-    students
+  def grade(year)
+    roster.select do |grade, student|
+      if grade == year
+        student
+      end
+    end 
   end
 
 end
