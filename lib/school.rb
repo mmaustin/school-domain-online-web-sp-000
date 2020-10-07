@@ -12,4 +12,12 @@ class School
     @roster[grade] << student
   end
 
+  def grade(grade)
+    students = []
+    if @roster[grade] == grade
+      students << student
+    end
+    students
+  end
+
 end
